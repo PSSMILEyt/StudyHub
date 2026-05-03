@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="StudyHub, PSSMILE, SEE preparation, Class 10 Nepal, SEE 2083, SEE 2026, SEE 2027, Class 10 notes, Class 10 science, Class 10 English, Class 10 math, Nepali notes, Social Studies notes, Computer science notes, SEE exam preparation, all subjects notes Nepal, SEE exercises, SEE solutions, video explanation class 10, revision notes SEE, study app Nepal, free education Nepal, student learning app, online study hub, SEE guide Nepal, class 10 revision, school notes Nepal">
+   <meta name="description" content="StudyHub by PSSMILE is a complete free learning platform for SEE Preparation and Class 10 students in Nepal. Get all subjects including Science, English, Math, Nepali, Social Studies, Computer Science, and more with well-organized notes, exercises, solutions, video explanations, and revision materials. This app is designed for SEE 2083, 2026, and 2027 exam preparation with easy and structured learning. Students can access chapter-wise notes, important questions, step-by-step explanations, and video tutorials anytime on mobile or web. StudyHub helps students revise faster, understand concepts clearly, and improve exam performance with a simple and user-friendly design.">
+
+    <title>StudyHub by PSSMILE | SEE Class 10 Preparation | Science, English, Math, Nepali, Social Studies, Computer Notes, Exercises, Revision | 2083, 2026, 2027 | Nepal | | Student Learning App</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-blue: #007bff;
+            --dark-blue: #0056b3;
+            --bg-light: #f4f7f6;
+            --white: #ffffff;
+            --text-main: #333;
+            --shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+
+        body { background-color: var(--bg-light); color: var(--text-main); padding-bottom: 70px; }
+
+        /* Navigation Bar */
+        nav {
+            background: var(--primary-blue);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow);
+        }
+
+        .container { padding: 20px; max-width: 800px; margin: auto; }
+
+        /* Card Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .card:active { transform: scale(0.95); }
+
+        .card i { font-size: 2rem; color: var(--primary-blue); margin-bottom: 10px; }
+
+        .card h3 { font-size: 0.9rem; font-weight: 600; }
+
+        /* Search Bar Styles */
+        .search-box {
+            width: 100%;
+            padding: 15px;
+            border-radius: 25px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        /* Subject Page Styles */
+        .subject-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .back-btn {
+            background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--primary-blue);
+        }
+
+        .topic-card {
+            background: white;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary-blue);
+        }
+
+        .btn-group { display: flex; gap: 10px; margin-top: 10px; }
+
+        .btn {
+            flex: 1;
+            padding: 8px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .btn-yt { background: #ff0000; }
+        .btn-drive { background: #34a853; }
+
+        /* Floating Button */
+        .fab {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background: var(--dark-blue);
+            color: white;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-decoration: none;
+            z-index: 999;
+        }
+
+        /* Bottom Tab Bar */
+        .tab-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+
+        .tab-item { text-align: center; color: #777; font-size: 0.7rem; cursor: pointer; flex: 1; }
+        .tab-item.active { color: var(--primary-blue); }
+        .tab-item i { font-size: 1.2rem; display: block; }
+
+        .page { display: none; }
+        .page.active { display: block; }
+
+        /* Utils */
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+    <nav id="nav-title">StudyHub</nav>
+
+    <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <!-- HOME PAGE -->
+        <section id="home" class="page active">
+            <h2 style="margin-bottom: 15px;">Explore Subjects</h2>
+            <div class="grid" id="subjects-grid">
+                <!-- Subject cards will be injected here -->
+            </div>
+        </section>
+
+        <!-- SEARCH PAGE -->
+        <section id="search-page" class="page">
+            <input type="text" class="search-box" id="globalSearch" placeholder="Search for subjects..." onkeyup="filterSubjects()">
+            <div class="grid" id="search-results"></div>
+        </section>
+
+        <!-- SUBJECT DETAIL PAGE -->
+        <section id="subject-detail" class="page">
+            <div class="subject-header">
+                <button class="back-btn" onclick="showPage('home')"><i class="fas fa-arrow-left"></i></button>
+                <h2 id="current-subject-name">Subject</h2>
+            </div>
+            <input type="text" class="search-box" id="topicSearch" placeholder="Search topics..." onkeyup="filterTopics()">
+            <div id="topics-list">
+                <!-- Topics will be injected here -->
+            </div>
+        </section>
+
+        <!-- EXTRA PAGE: ABOUT -->
+        <section id="about" class="page">
+            <h2>About StudyHub</h2>
+            <div class="topic-card" style="margin-top:20px;">
+                <p>👤 About This App<br>
+
+Welcome to your all-in-one educational companion. StudyHub by PSSMILE is designed to provide high-quality curated notes and video tutorials to help you understand concepts easily, study in an organized way, and excel in your exams with confidence.<br>
+
+This platform is built especially for SEE and +2 students, making learning simple, structured, and accessible anytime on mobile or web.<br><br>
+
+📚 What You Get Here<br>
+Subject-wise organized study materials
+Easy-to-understand video lessons
+Important notes and PDF resources
+Quick access to useful learning websites<br><br>
+🎥 My YouTube Channel<br>
+
+I also create educational content to help students learn in a simple and effective way.<br>
+
+Channel Name: PSSMILE<br>
+🎬 Subscribe for more lessons, explanations, and study tips.<br><br>
+
+🎯 Our Goal<br>
+
+The main goal of StudyHub is to make education:
+
+Simple
+Free
+Organized
+Accessible for every student<br><br>
+👨‍💻 Creator<br>
+
+Created with ❤️ by PSSMILE to support students in their learning journey and help them achieve better results in exams.</p>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- EXTRA PAGE: WEBSITES -->
+        <section id="websites" class="page">
+            <h2>Our Resources</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="topic-card">
+                <h3>Official Note Site</h3>
+                <p>Access our archived resources here.</p>
+                <a href="https://sites.google.com/view/pssmileteacher/home" target="_blank" class="btn btn-drive" style="display:inline-block; margin-top:10px;">Visit Site</a>
+            </div>
+
+
+<div class="topic-card">
+                <h3>SEE Preparation Class 10 || CHANNEL</h3>
+                <p>Let's Prepare</p>
+                <a href="https://www.youtube.com/@pssmile.teacher" target="_blank" class="btn btn-drive" style="display:inline-block; margin-top:10px;">Visit Site</a>
+            </div>
+
+
+
+<div class="topic-card">
+                <h3>PSSMILE Website</h3>
+                <p>Download my GAME now</p>
+                <a href="https://pssmileofficial.github.io/PSSMILEofficial/" target="_blank" class="btn btn-drive" style="display:inline-block; margin-top:10px;">Visit Site</a>
+            </div>
+
+
+<div class="topic-card">
+                <h3>My Gaming channel</h3>
+                <p>Let's play together</p>
+                <a href="https://www.youtube.com/@PSSMILE_officials" target="_blank" class="btn btn-drive" style="display:inline-block; margin-top:10px;">Visit Site</a>
+            </div>
+
+
+<div class="topic-card">
+                <h3>My Drawing Channel</h3>
+                <p>Be Creative</p>
+                <a href="https://www.youtube.com/@PSSMILEcreator" target="_blank" class="btn btn-drive" style="display:inline-block; margin-top:10px;">Visit Site</a>
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Floating Action Button -->
+    <a href="https://sites.google.com/view/pssmileteacher/home" target="_blank" class="fab">
+        <i class="fas fa-globe"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Navigation Tab Bar -->
+    <div class="tab-bar">
+        <div class="tab-item active" onclick="showPage('home')"><i class="fas fa-home"></i>Home</div>
+        <div class="tab-item" onclick="showPage('search-page')"><i class="fas fa-search"></i>Search</div>
+        <div class="tab-item" onclick="showPage('about')"><i class="fas fa-info-circle"></i>About</div>
+        <div class="tab-item" onclick="showPage('websites')"><i class="fas fa-link"></i>Websites</div>
+    </div>
+
+    <script>
+        // DATA OBJECT - Manually edit this to add content
+        const studyData = [
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            { id: 1, name: "English", icon: "fa-book", topics: [
+                { title: "How Driverless Car Will Change Our World || Unit 1 Chapter 1", yt: "https://youtu.be/lrez3INLrk4?si=YSPkuMmTX8qDIBS0", notes: "https://drive.google.com/drive/folders/1KmUtEb4uxmgRPvugzyQT5aYqpOdxpnHz?usp=drive_link" },
+                { title: "Open Letter to UN Sceretary-General Antonio Gutress || Unit 1 Chapter 2", yt: "Video", notes: "https://drive.google.com/drive/folders/19KIdpzM5kfvG-r5BNkoBpzt56uDMDxqV?usp=drive_link" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" }
+
+            ]},
+
+
+
+
+            { id: 2, name: "Nepali", icon: "fas fa-flag", topics: [
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" }
+            ]},
+
+
+
+            { id: 3, name: "Computer", icon: "fa-laptop-code", topics: [
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" }
+            ]},
+
+
+
+            { id: 4, name: "Math", icon: "fa-calculator", topics: [
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" }
+            ]},
+
+
+
+            { id: 5, name: "Biology", icon: "fa-dna", topics: [
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" }
+            ]},
+
+
+
+            { id: 6, name: "Chemistry", icon: "fa-flask", topics: [
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" }
+            ]},
+
+
+
+            { id: 7, name: "Physics", icon: "fa-atom", topics: [
+                { title: "Scientific Study || Unit 1", yt: "https://youtu.be/kSyMpjiBbn8?si=GGpRw_eAgREkWSzH", notes: "https://drive.google.com/drive/folders/1qqaq9BGbbT7WO6sOijvVBYkUMYnXzAjf?usp=drive_link" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" }
+            ]},
+
+
+
+            { id: 8, name: "Grammar", icon: "fa-solid fa-spell-check", topics: [
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" }
+            ]},
+
+
+
+            { id: 9, name: "Social studies", icon: "fa-globe-americas", topics: [
+                { title: "Samajikikaran || Unit 1 Chapter 1", yt: "https://youtu.be/YyLrt9kqvSE?si=j4cWB5qWWWOfwZak", notes: "https://drive.google.com/drive/folders/1J-_KK-FJEACto8_D5Xzd6whxYHSY1DFN?usp=drive_link" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" }
+
+
+
+            ]},
+
+
+
+            { id: 10, name: "Optional math", icon: "fas fa-square-root-alt", topics: [
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" }
+            ]},
+
+
+
+            { id: 11, name: "Science lab", icon: "fa-microscope", topics: [
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" }
+            ]},
+
+
+
+            { id: 12, name: "Nepali Byakran", icon: "fa-language", topics: [
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" }
+            ]},
+
+
+
+            { id: 13, name: "Atlas", icon: "fa-atlas", topics: [
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" }
+            ]},
+
+
+
+            { id: 14, name: "Computer Science", icon: "fa-laptop-code", topics: [
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" },
+                { title: "Title", yt: "Video", notes: "Note" }
+            ]},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ];
+
+        // PAGE NAVIGATION
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+            
+            // Update Active Tab
+            document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
+            if(pageId === 'home') document.querySelectorAll('.tab-item')[0].classList.add('active');
+            if(pageId === 'search-page') document.querySelectorAll('.tab-item')[1].classList.add('active');
+        }
+
+        // LOAD SUBJECTS ON HOME
+        const grid = document.getElementById('subjects-grid');
+        const searchGrid = document.getElementById('search-results');
+
+        function renderSubjects(data, targetElement) {
+            targetElement.innerHTML = '';
+            data.forEach(sub => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `<i class="fas ${sub.icon}"></i><h3>${sub.name}</h3>`;
+                card.onclick = () => openSubject(sub.id);
+                targetElement.appendChild(card);
+            });
+        }
+
+        renderSubjects(studyData, grid);
+
+        // OPEN SPECIFIC SUBJECT
+        let currentSubjectTopics = [];
+        function openSubject(id) {
+            const sub = studyData.find(s => s.id === id);
+            document.getElementById('current-subject-name').innerText = sub.name;
+            currentSubjectTopics = sub.topics;
+            renderTopics(currentSubjectTopics);
+            showPage('subject-detail');
+        }
+
+        function renderTopics(topics) {
+            const list = document.getElementById('topics-list');
+            list.innerHTML = topics.length ? '' : '<p style="text-align:center; margin-top:20px;">No topics added yet.</p>';
+            topics.forEach(t => {
+                const div = document.createElement('div');
+                div.className = 'topic-card';
+                div.innerHTML = `
+                    <h4>${t.title}</h4>
+                    <div class="btn-group">
+                        <a href="${t.yt}" target="_blank" class="btn btn-yt"><i class="fab fa-youtube"></i> Video</a>
+                        <a href="${t.notes}" target="_blank" class="btn btn-drive"><i class="fas fa-file-pdf"></i> Notes</a>
+                    </div>
+                `;
+                list.appendChild(div);
+            });
+        }
+
+        // SEARCH FUNCTIONALITY
+        function filterSubjects() {
+            const query = document.getElementById('globalSearch').value.toLowerCase();
+            const filtered = studyData.filter(s => s.name.toLowerCase().includes(query));
+            renderSubjects(filtered, searchGrid);
+        }
+
+        function filterTopics() {
+            const query = document.getElementById('topicSearch').value.toLowerCase();
+            const filtered = currentSubjectTopics.filter(t => t.title.toLowerCase().includes(query));
+            renderTopics(filtered);
+        }
+    </script>
+</body>
+</html>
