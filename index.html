@@ -214,15 +214,29 @@
         </section>
 
         <!-- SEARCH PAGE -->
-        <section id="search-page" class="page">
-<select id="subjectFilter" onchange="filterSearch()" class="search-box">
-    <option value="all">All Subjects</option>
-</select>
-            <input type="text" class="search-box" id="globalSearch" placeholder="Search for subjects..." onkeyup="filterSearch()">
-            <div class="grid" id="search-results"></div>
+        <!-- SEARCH PAGE -->
+<section id="search-page" class="page">
 
-        </section>
+    <div class="search-header">
+        <h2>Search Topics</h2>
+        <p>Find notes, videos and chapters quickly</p>
+    </div>
 
+    <div class="search-box-wrapper">
+        <select id="subjectFilter" onchange="filterSearch()" class="search-box">
+            <option value="all">All Subjects</option>
+        </select>
+
+        <input type="text"
+            class="search-box"
+            id="globalSearch"
+            placeholder="Search topics like 'motion', 'unit 1'..."
+            onkeyup="filterSearch()">
+    </div>
+
+    <div id="search-results" class="search-results"></div>
+
+</section>
         <!-- SUBJECT DETAIL PAGE -->
         <section id="subject-detail" class="page">
             <div class="subject-header">
