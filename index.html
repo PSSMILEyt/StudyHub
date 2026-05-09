@@ -1708,10 +1708,32 @@ function renderSearchResults(results) {
             </p>
         `;
 
-        card.onclick = () => openSubject(item.subjectId);
+card.onclick = () => openTopicFromSearch(item.subjectId, item.topic.title);
 
         searchGrid.appendChild(card);
     });
+}
+function openTopicFromSearch(subjectId, topicTitle) {
+    const sub = studyData.find(s => s.id === subjectId);
+
+    document.getElementById('current-subject-name').innerText = sub.name;
+    currentSubjectTopics = sub.topics;
+
+    showPage('subject-detail');
+
+    renderTopics(currentSubjectTopics);
+
+    // wait for DOM update then scroll to topic
+    setTimeout(() => {
+        const cards = document.querySelectorAll(".topic-card h4");
+
+        cards.forEach(card => {
+            if (card.innerText === topicTitle) {
+                card.parentElement.style.border = "2px solid #007bff";
+                card.parentElement.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+        });
+    }, 200);
 }
 
 
